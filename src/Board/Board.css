@@ -1,0 +1,53 @@
+:root {
+  --cellSize: 20px;
+}
+
+.board {
+  outline: 2px solid rgb(134, 154, 189);
+}
+
+.row {
+  height: var(--cellSize);
+}
+
+.cell {
+  width: var(--cellSize);
+  height: var(--cellSize);
+  display: inline-block;
+  background-color: black;
+}
+
+.food-cell {
+  background-color: indianred;
+}
+
+.poisonFood-cell {
+  background-color: darkviolet !important;
+}
+
+.snake-cell {
+  background-color: darkolivegreen;
+}
+
+.border-cell {
+  background-color: #282c34;
+}
+
+.snakeHead-cell {
+  background-color: darkseagreen;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  background-color: var(--light);
+  width: 350px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
